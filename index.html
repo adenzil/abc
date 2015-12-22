@@ -73,22 +73,23 @@
   </style>
 
 <script type="text/javascript">
+var i = 1, howManyTimes = 19;
+   
+
    function ali(){
 
-        for(var x=1; x<10;x++)
-        {
-             setTimeout(function () { 
-                                for(var i=1; i<19;i++)
-                                {
-                                    var temp = document.getElementById("a"+i); 
-                                    temp.style.fill="yellow";
-                                }
-                 }, 1000);
-             
-        }
+    var temp = document.getElementById("a"+i); 
+    temp.style.fill="yellow";
+    i++;
+    if( i < howManyTimes ){
+        setTimeout( ali, 500 );
+    }
 
-   
-   }
+
+}
+
+
+
 window.onload=ali;
 </script>
 
@@ -498,13 +499,13 @@ window.onload=ali;
           <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2015-01-31"/>
       </g>
       <g transform="translate(78, 0)">
-          <rect class="day" width="11" height="11" y="0" fill="#000000" data-count="0" data-date="2015-02-01"/>
-          <rect class="day" width="11" height="11" y="13" fill="#000000" data-count="0" data-date="2015-02-02"/>
-          <rect class="day" width="11" height="11" y="26" fill="#000000" data-count="0" data-date="2015-02-03"/>
-          <rect class="day" width="11" height="11" y="39" fill="#000000" data-count="0" data-date="2015-02-04"/>
-          <rect class="day" width="11" height="11" y="52" fill="#000000" data-count="0" data-date="2015-02-05"/>
-          <rect class="day" width="11" height="11" y="65" fill="#000000" data-count="0" data-date="2015-02-06"/>
-          <rect class="day" width="11" height="11" y="78" fill="#000000" data-count="0" data-date="2015-02-07"/>
+          <rect class="day" id="l1" width="11" height="11" y="0" fill="#000000" data-count="0" data-date="2015-02-01"/>
+          <rect class="day" id="l2" width="11" height="11" y="13" fill="#000000" data-count="0" data-date="2015-02-02"/>
+          <rect class="day" id="l3" width="11" height="11" y="26" fill="#000000" data-count="0" data-date="2015-02-03"/>
+          <rect class="day" id="l4" width="11" height="11" y="39" fill="#000000" data-count="0" data-date="2015-02-04"/>
+          <rect class="day" id="l5" width="11" height="11" y="52" fill="#000000" data-count="0" data-date="2015-02-05"/>
+          <rect class="day" id="l6" width="11" height="11" y="65" fill="#000000" data-count="0" data-date="2015-02-06"/>
+          <rect class="day" id="l7" width="11" height="11" y="78" fill="#000000" data-count="0" data-date="2015-02-07"/>
       </g>
       <g transform="translate(91, 0)">
           <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2015-02-08"/>
@@ -513,7 +514,7 @@ window.onload=ali;
           <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2015-02-11"/>
           <rect class="day" width="11" height="11" y="52" fill="#eeeeee" data-count="0" data-date="2015-02-12"/>
           <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2015-02-13"/>
-          <rect class="day" width="11" height="11" y="78" fill="#000000" data-count="0" data-date="2015-02-14"/>
+          <rect class="day" id="l8" width="11" height="11" y="78" fill="#000000" data-count="0" data-date="2015-02-14"/>
       </g>
       <g transform="translate(104, 0)">
           <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2015-02-15"/>
@@ -522,7 +523,7 @@ window.onload=ali;
           <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2015-02-18"/>
           <rect class="day" width="11" height="11" y="52" fill="#eeeeee" data-count="0" data-date="2015-02-19"/>
           <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2015-02-20"/>
-          <rect class="day" width="11" height="11" y="78" fill="#000000" data-count="0" data-date="2015-02-21"/>
+          <rect class="day" id="l9" width="11" height="11" y="78" fill="#000000" data-count="0" data-date="2015-02-21"/>
       </g>
       <g transform="translate(117, 0)">
           <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2015-02-22"/>
@@ -531,7 +532,7 @@ window.onload=ali;
           <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2015-02-25"/>
           <rect class="day" width="11" height="11" y="52" fill="#eeeeee" data-count="0" data-date="2015-02-26"/>
           <rect class="day" width="11" height="11" y="65" fill="#eeeeee" data-count="0" data-date="2015-02-27"/>
-          <rect class="day" width="11" height="11" y="78" fill="#000000" data-count="0" data-date="2015-02-28"/>
+          <rect class="day" id="l10" width="11" height="11" y="78" fill="#000000" data-count="0" data-date="2015-02-28"/>
       </g>
       <g transform="translate(130, 0)">
           <rect class="day" width="11" height="11" y="0" fill="#eeeeee" data-count="0" data-date="2015-03-01"/>
