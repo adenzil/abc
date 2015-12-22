@@ -69,7 +69,28 @@
 .calendar-graph.days-selected rect.day {
     opacity: 1;
 }
+
   </style>
+
+<script type="text/javascript">
+   function ali(){
+
+        for(var x=1; x<10;x++)
+        {
+             setTimeout(function () { 
+                                for(var i=1; i<19;i++)
+                                {
+                                    var temp = document.getElementById("a"+i); 
+                                    temp.style.fill="yellow";
+                                }
+                 }, 1000);
+             
+        }
+
+   
+   }
+window.onload=ali;
+</script>
 
   </head>
 
