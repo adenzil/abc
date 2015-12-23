@@ -77,6 +77,7 @@ var a = 1, at = 19;
 var l = 1, lt = 11;
 var i = 1, it = 16;
 var s = 1, st = 15;
+var t = 1, tt = 12;
    
 
    function ao(){
@@ -127,12 +128,24 @@ function so(){
     if( s < st ){
         setTimeout( so, 50 );
     }
+    if( s == st){
+        to();
+    }
+
+}
+
+function to(){
+    var temp = document.getElementById("t"+t); 
+    temp.style.fill="yellow";
+    t++;
+    if( t < tt ){
+        setTimeout( to, 50 );
+    }
     // if( l == lt){
     //     io();
     //}
 
 }
-
 
 
 window.onload=ao;
@@ -688,7 +701,7 @@ window.onload=ao;
           <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2015-05-23"/>
       </g>
       <g transform="translate(286, 0)">
-          <rect class="day" width="11" height="11" y="0" fill="#000000" data-count="0" data-date="2015-05-24"/>
+          <rect class="day" id="t1" width="11" height="11" y="0" fill="#000000" data-count="0" data-date="2015-05-24"/>
           <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2015-05-25"/>
           <rect class="day" width="11" height="11" y="26" fill="#eeeeee" data-count="0" data-date="2015-05-26"/>
           <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2015-05-27"/>
@@ -697,7 +710,7 @@ window.onload=ao;
           <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2015-05-30"/>
       </g>
       <g transform="translate(299, 0)">
-          <rect class="day" width="11" height="11" y="0" fill="#000000" data-count="0" data-date="2015-05-31"/>
+          <rect class="day" id="t2" width="11" height="11" y="0" fill="#000000" data-count="0" data-date="2015-05-31"/>
           <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2015-06-01"/>
           <rect class="day" width="11" height="11" y="26" fill="#eeeeee" data-count="0" data-date="2015-06-02"/>
           <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2015-06-03"/>
@@ -706,16 +719,16 @@ window.onload=ao;
           <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2015-06-06"/>
       </g>
       <g transform="translate(312, 0)">
-          <rect class="day" width="11" height="11" y="0" fill="#000000" data-count="0" data-date="2015-06-07"/>
-          <rect class="day" width="11" height="11" y="13" fill="#000000" data-count="0" data-date="2015-06-08"/>
-          <rect class="day" width="11" height="11" y="26" fill="#000000" data-count="0" data-date="2015-06-09"/>
-          <rect class="day" width="11" height="11" y="39" fill="#000000" data-count="0" data-date="2015-06-10"/>
-          <rect class="day" width="11" height="11" y="52" fill="#000000" data-count="0" data-date="2015-06-11"/>
-          <rect class="day" width="11" height="11" y="65" fill="#000000" data-count="0" data-date="2015-06-12"/>
-          <rect class="day" width="11" height="11" y="78" fill="#000000" data-count="0" data-date="2015-06-13"/>
+          <rect class="day" id="t3" width="11" height="11" y="0" fill="#000000" data-count="0" data-date="2015-06-07"/>
+          <rect class="day" id="t4" width="11" height="11" y="13" fill="#000000" data-count="0" data-date="2015-06-08"/>
+          <rect class="day" id="t5" width="11" height="11" y="26" fill="#000000" data-count="0" data-date="2015-06-09"/>
+          <rect class="day" id="t6" width="11" height="11" y="39" fill="#000000" data-count="0" data-date="2015-06-10"/>
+          <rect class="day" id="t7" width="11" height="11" y="52" fill="#000000" data-count="0" data-date="2015-06-11"/>
+          <rect class="day" id="t8" width="11" height="11" y="65" fill="#000000" data-count="0" data-date="2015-06-12"/>
+          <rect class="day" id="t9" width="11" height="11" y="78" fill="#000000" data-count="0" data-date="2015-06-13"/>
       </g>
       <g transform="translate(325, 0)">
-          <rect class="day" width="11" height="11" y="0" fill="#000000" data-count="0" data-date="2015-06-14"/>
+          <rect class="day" id="t10" width="11" height="11" y="0" fill="#000000" data-count="0" data-date="2015-06-14"/>
           <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2015-06-15"/>
           <rect class="day" width="11" height="11" y="26" fill="#eeeeee" data-count="0" data-date="2015-06-16"/>
           <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2015-06-17"/>
@@ -724,7 +737,7 @@ window.onload=ao;
           <rect class="day" width="11" height="11" y="78" fill="#eeeeee" data-count="0" data-date="2015-06-20"/>
       </g>
       <g transform="translate(338, 0)">
-          <rect class="day" width="11" height="11" y="0" fill="#000000" data-count="0" data-date="2015-06-21"/>
+          <rect class="day" id="t11" width="11" height="11" y="0" fill="#000000" data-count="0" data-date="2015-06-21"/>
           <rect class="day" width="11" height="11" y="13" fill="#eeeeee" data-count="0" data-date="2015-06-22"/>
           <rect class="day" width="11" height="11" y="26" fill="#eeeeee" data-count="0" data-date="2015-06-23"/>
           <rect class="day" width="11" height="11" y="39" fill="#eeeeee" data-count="0" data-date="2015-06-24"/>
