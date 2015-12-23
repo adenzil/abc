@@ -74,6 +74,7 @@
 
 <script type="text/javascript">
 var i = 1, howManyTimes = 19;
+var l = 1, lt = 11;
    
 
    function a(){
@@ -84,7 +85,20 @@ var i = 1, howManyTimes = 19;
     if( i < howManyTimes ){
         setTimeout( a, 500 );
     }
+    if( i == howManyTimes){
+        lo();
+    }
 
+
+}
+
+function lo(){
+    var temp = document.getElementById("l"+l); 
+    temp.style.fill="yellow";
+    l++;
+    if( l < lt ){
+        setTimeout( lo, 500 );
+    }
 
 }
 
