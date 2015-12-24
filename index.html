@@ -86,16 +86,19 @@ var bli = 1, blit = 4;
    function ao(){
 
     var temp = document.getElementById("a"+a);
-    if(temp.style.fill=="yellow")
+    if(temp.style.fill=="blue")
     {
       temp.style.fill="black";
     }
-    else{
+    else if(temp.style.fill=="black"){
       temp.style.fill="yellow";
+    }
+    else{
+      temp.style.fill="blue";
     }
     a++;
     if( a < at ){
-        setTimeout( ao, 50 );
+        setTimeout( ao, 20 );
     }
     if( a == at){
         lo();
@@ -107,16 +110,19 @@ var bli = 1, blit = 4;
 
 function lo(){
     var temp = document.getElementById("l"+l); 
-    if(temp.style.fill=="yellow")
+    if(temp.style.fill=="blue")
     {
       temp.style.fill="black";
     }
-    else{
+    else if(temp.style.fill=="black"){
       temp.style.fill="yellow";
+    }
+    else{
+      temp.style.fill="blue";
     }
     l++;
     if( l < lt ){
-        setTimeout( lo, 50 );
+        setTimeout( lo, 20 );
     }
     if( l == lt){
         io();
@@ -127,16 +133,19 @@ function lo(){
 
 function io(){
     var temp = document.getElementById("i"+i); 
-    if(temp.style.fill=="yellow")
+    if(temp.style.fill=="blue")
     {
       temp.style.fill="black";
     }
-    else{
+    else if(temp.style.fill=="black"){
       temp.style.fill="yellow";
+    }
+    else{
+      temp.style.fill="blue";
     }
     i++;
     if( i < it ){
-        setTimeout( io, 50 );
+        setTimeout( io, 20 );
     }
     if( i == it){
         so();
@@ -147,16 +156,19 @@ function io(){
 
 function so(){
     var temp = document.getElementById("s"+s); 
-    if(temp.style.fill=="yellow")
+    if(temp.style.fill=="blue")
     {
       temp.style.fill="black";
     }
-    else{
+    else if(temp.style.fill=="black"){
       temp.style.fill="yellow";
+    }
+    else{
+      temp.style.fill="blue";
     }
     s++;
     if( s < st ){
-        setTimeout( so, 50 );
+        setTimeout( so, 20 );
     }
     if( s == st){
         to();
@@ -167,16 +179,19 @@ function so(){
 
 function to(){
     var temp = document.getElementById("t"+t); 
-    if(temp.style.fill=="yellow")
+    if(temp.style.fill=="blue")
     {
       temp.style.fill="black";
     }
-    else{
+    else if(temp.style.fill=="black"){
       temp.style.fill="yellow";
+    }
+    else{
+      temp.style.fill="blue";
     }
     t++;
     if( t < tt ){
-        setTimeout( to, 50 );
+        setTimeout( to, 20 );
     }
     if( t == tt){
         eo();
@@ -187,16 +202,19 @@ function to(){
 
 function eo(){
     var temp = document.getElementById("e"+e); 
-    if(temp.style.fill=="yellow")
+    if(temp.style.fill=="blue")
     {
       temp.style.fill="black";
     }
-    else{
+    else if(temp.style.fill=="black"){
       temp.style.fill="yellow";
+    }
+    else{
+      temp.style.fill="blue";
     }
     e++;
     if( e < et ){
-        setTimeout( eo, 50 );
+        setTimeout( eo, 20 );
     }
     if( e == et){
         ro();
@@ -207,16 +225,19 @@ function eo(){
 
 function ro(){
     var temp = document.getElementById("r"+r); 
-    if(temp.style.fill=="yellow")
+    if(temp.style.fill=="blue")
     {
       temp.style.fill="black";
     }
-    else{
+    else if(temp.style.fill=="black"){
       temp.style.fill="yellow";
+    }
+    else{
+      temp.style.fill="blue";
     }
     r++;
     if( r < rt ){
-        setTimeout( ro, 50 );
+        setTimeout( ro, 20 );
     }
     if( r == rt){
         blink();
@@ -227,16 +248,19 @@ function ro(){
 
 function blink(){
     var temp = document.getElementById("bli"+bli); 
-    if(temp.style.fill=="yellow")
+    if(temp.style.fill=="blue")
     {
       temp.style.fill="black";
     }
-    else{
+    else if(temp.style.fill=="black"){
       temp.style.fill="yellow";
+    }
+    else{
+      temp.style.fill="blue";
     }
     bli++;
     if( bli < blit ){
-        setTimeout( blink, 50 );
+        setTimeout( blink, 20 );
     }
     if( bli == blit){
         ao();
