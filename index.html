@@ -80,19 +80,26 @@ var s = 1, st = 15;
 var t = 1, tt = 12;
 var e = 1, et = 16;
 var r = 1, rt = 17;
-var bli = 1, blit = 3;
+var bli = 1, blit = 4;
    
 
    function ao(){
 
-    var temp = document.getElementById("a"+a); 
-    temp.style.fill="yellow";
+    var temp = document.getElementById("a"+a);
+    if(temp.style.fill=="yellow")
+    {
+      temp.style.fill="black";
+    }
+    else{
+      temp.style.fill="yellow";
+    }
     a++;
     if( a < at ){
         setTimeout( ao, 50 );
     }
     if( a == at){
         lo();
+        a=1;
     }
 
 
@@ -100,91 +107,140 @@ var bli = 1, blit = 3;
 
 function lo(){
     var temp = document.getElementById("l"+l); 
-    temp.style.fill="yellow";
+    if(temp.style.fill=="yellow")
+    {
+      temp.style.fill="black";
+    }
+    else{
+      temp.style.fill="yellow";
+    }
     l++;
     if( l < lt ){
         setTimeout( lo, 50 );
     }
     if( l == lt){
         io();
+        l=1;
     }
 
 }
 
 function io(){
     var temp = document.getElementById("i"+i); 
-    temp.style.fill="yellow";
+    if(temp.style.fill=="yellow")
+    {
+      temp.style.fill="black";
+    }
+    else{
+      temp.style.fill="yellow";
+    }
     i++;
     if( i < it ){
         setTimeout( io, 50 );
     }
     if( i == it){
         so();
+        i=1;
     }
 
 }
 
 function so(){
     var temp = document.getElementById("s"+s); 
-    temp.style.fill="yellow";
+    if(temp.style.fill=="yellow")
+    {
+      temp.style.fill="black";
+    }
+    else{
+      temp.style.fill="yellow";
+    }
     s++;
     if( s < st ){
         setTimeout( so, 50 );
     }
     if( s == st){
         to();
+        s=1;
     }
 
 }
 
 function to(){
     var temp = document.getElementById("t"+t); 
-    temp.style.fill="yellow";
+    if(temp.style.fill=="yellow")
+    {
+      temp.style.fill="black";
+    }
+    else{
+      temp.style.fill="yellow";
+    }
     t++;
     if( t < tt ){
         setTimeout( to, 50 );
     }
     if( t == tt){
         eo();
+        t=1;
     }
 
 }
 
 function eo(){
     var temp = document.getElementById("e"+e); 
-    temp.style.fill="yellow";
+    if(temp.style.fill=="yellow")
+    {
+      temp.style.fill="black";
+    }
+    else{
+      temp.style.fill="yellow";
+    }
     e++;
     if( e < et ){
         setTimeout( eo, 50 );
     }
     if( e == et){
         ro();
+        e=1;
     }
 
 }
 
 function ro(){
     var temp = document.getElementById("r"+r); 
-    temp.style.fill="yellow";
+    if(temp.style.fill=="yellow")
+    {
+      temp.style.fill="black";
+    }
+    else{
+      temp.style.fill="yellow";
+    }
     r++;
     if( r < rt ){
         setTimeout( ro, 50 );
     }
     if( r == rt){
         blink();
+        r=1;
     }
 
 }
 
 function blink(){
     var temp = document.getElementById("bli"+bli); 
-    temp.style.fill="#eeeeee";
+    if(temp.style.fill=="yellow")
+    {
+      temp.style.fill="black";
+    }
+    else{
+      temp.style.fill="yellow";
+    }
     bli++;
     if( bli < blit ){
         setTimeout( blink, 50 );
     }
     if( bli == blit){
         ao();
+        bli=1;
     }
 }
 
